@@ -40,3 +40,5 @@ const teams = [
     division: "Atlantic",
   },
 ];
+
+module.exports = teams;
