@@ -26,9 +26,14 @@ app.use("/players", playerRouter);
 const teamsRouter = require("./routes/teamsroute");
 app.use("/teams", teamsRouter);
 
-app.get("/conferences", (req, res) => {
-  res.send(conferences);
-});
+app
+  .route("/conferences")
+  .get((req, res) => {
+    res.send(conferences);
+  })
+  .post((req, res, next) => {
+    res.send(conferences);
+  });
 
 function logger(req, res, next) {
   console.log(req.originalUrl);
