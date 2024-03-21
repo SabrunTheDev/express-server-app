@@ -8,6 +8,7 @@ const players = require("./data/players");
 const teams = require("./data/teams");
 const conferences = require("./data/conference");
 
+app.use(express.static("public"));
 app.use(express.static("css"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: true }));
@@ -17,7 +18,7 @@ app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
   // res.send("Hello");
-  res.render("index", { text: "World" });
+  res.render("index", { text: "RESTful Api" });
 });
 
 const playerRouter = require("./routes/playersroute");
