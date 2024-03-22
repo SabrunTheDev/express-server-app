@@ -12,6 +12,8 @@ This is a simple Express.js application built for managing NBA data including pl
 - `data/players.js`: Contains sample NBA player data.
 - `data/teams.js`: Contains sample NBA team data.
 - `data/conference.js`: Contains sample NBA conference data.
+- `views/index.ejs`: EJS template file displays "NBA" followed by a dynamic text value
+- `public/script.js`: JavaScript code snippet adds a breathing text effect to an HTML element with the ID `breathingText`
 - `css/`: Directory containing CSS files for styling
 
 ### Endpoints
