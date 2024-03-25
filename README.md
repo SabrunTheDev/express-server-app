@@ -25,8 +25,8 @@ This is a simple Express.js application built for managing NBA data including pl
 - `POST /players`: Adds a new NBA player to the list.
   - Request Body Parameters:
     - `name`: Name of the player (required).
-    - `rings`: Number of championship rings (optional).
-    - `mvps`: Number of MVP awards (optional).
+    - `rings`: Number of championship rings (optional/Enter 0 if no rings).
+    - `mvps`: Number of MVP awards (optional/Enter 0 if no MVPs).
     - `team`: Team of the player (required).
 - `GET /players/:id`: Retrieves details of a specific NBA player by ID.
 - `DELETE /players/:id`: Deletes a specific NBA player by ID.
